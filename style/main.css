@@ -979,7 +979,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .job-details {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
