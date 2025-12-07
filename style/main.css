@@ -874,6 +874,215 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ========================================
+   Business Scope Section
+   ======================================== */
+.scope-section {
+    background: linear-gradient(180deg, var(--sky-blue-pale) 0%, var(--white) 100%);
+}
+
+.scope-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.scope-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-100);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+}
+
+.scope-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--sky-blue-light);
+}
+
+.scope-image {
+    position: relative;
+    height: 160px;
+    /* overflow: hidden; */
+    background: var(--gray-100);
+}
+
+.scope-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.scope-card:hover .scope-image img {
+    transform: scale(1.1);
+}
+
+.scope-icon {
+    position: absolute;
+    bottom: -20px;
+    right: 12px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 148, 254, 0.25);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(8px);
+}
+
+.scope-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--sky-blue-dark);
+    transition: all 0.3s ease;
+}
+
+.scope-card:hover .scope-icon {
+    background: var(--sky-blue);
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+}
+
+.scope-card:hover .scope-icon svg {
+    stroke: var(--white);
+}
+
+.scope-content {
+    padding: 1.25rem;
+}
+
+.scope-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.scope-content p {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    line-height: 1.5;
+}
+
+/* ========================================
+   Visa Service Section
+   ======================================== */
+.visa-section {
+    background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+    background-image: url(../images/section_visa.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.visa-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--gray-600);
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    line-height: 1.7;
+}
+
+.visa-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+}
+
+.visa-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-100);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.visa-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--sky-blue);
+}
+
+.visa-flag {
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    transition: all var(--transition-normal);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.visa-card:hover .visa-flag {
+    transform: scale(1.2);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+.visa-country {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    display: block;
+    transition: color var(--transition-fast);
+}
+
+.visa-card:hover .visa-country {
+    color: var(--sky-blue-dark);
+}
+
+/* Responsive adjustments for scope and visa */
+@media (max-width: 1200px) {
+    .scope-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .visa-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .scope-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .visa-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .scope-grid {
+        grid-template-columns: 1fr;
+    }
+    .scope-image {
+        height: 120px;
+    }
+    .visa-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .visa-card {
+        padding: 1rem;
+    }
+    .visa-flag {
+        width: 60px;
+        height: 38px;
+    }
+}
+
+/* ========================================
    Advantages Section
    ======================================== */
 .advantages-section {
