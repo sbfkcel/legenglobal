@@ -1034,7 +1034,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: center;
+    align-items: end;
 }
 
 .contact-title {
@@ -1084,6 +1084,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-link:hover svg {
     stroke: var(--white);
+}
+
+.contact-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--gray-600);
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--gray-50);
+    border-radius: 12px;
+    border: 1px solid var(--gray-200);
+    cursor: default;
+}
+
+.contact-info svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--sky-blue);
 }
 
 .contact-cta-side {
