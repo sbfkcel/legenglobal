@@ -483,21 +483,21 @@ h1, h2, h3, h4, h5, h6 {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)),
+    background:top 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         repeating-linear-gradient(
             0deg,
             transparent,
-            transparent 50px,
-            rgba(255, 255, 255, 0.03) 50px,
-            rgba(255, 255, 255, 0.03) 51px
+            transparent 64px,
+            rgba(255, 255, 255, 0.05) 64px,
+            rgba(255, 255, 255, 0.05) 65px
         ),
         repeating-linear-gradient(
             90deg,
             transparent,
-            transparent 50px,
-            rgba(255, 255, 255, 0.03) 50px,
-            rgba(255, 255, 255, 0.03) 51px
+            transparent 64px,
+            rgba(255, 255, 255, 0.05) 64px,
+            rgba(255, 255, 255, 0.05) 65px
         );
     backdrop-filter: blur(6px);
     z-index: 1;
