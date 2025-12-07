@@ -1019,16 +1019,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .visa-flag {
-    font-size: 3.5rem;
-    line-height: 1;
+    width: 72px;
+    height: auto;
     margin-bottom: 0.75rem;
+    border-radius: 6px;
     transition: all var(--transition-normal);
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 .visa-card:hover .visa-flag {
-    transform: scale(1.2);
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+    transform: scale(1.15);
 }
 
 .visa-country {
