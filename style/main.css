@@ -1099,8 +1099,8 @@ h1, h2, h3, h4, h5, h6 {
         padding: 1rem;
     }
     .visa-flag {
-        width: 60px;
-        height: 38px;
+        width: 48px;
+        height: auto;
     }
 }
 
